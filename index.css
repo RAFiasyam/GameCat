@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 500px;
+    height: 250px;
+    border: 1px solid #000;
+    background-image: url("asset/backGround.svg");
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    /* src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Femojis.wiki%2Femoji-pics%2Fwhatsapp%2Fmoai-whatsapp.png&f=1&nofb=1&ipt=09459d46530d3a124aa4063def11c78369d561485991aac7200d4e299156cc88&ipo=images"; */
+    position: relative;
+    top: 180px;
+}
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 100px;}    
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 120px;
+    left: 480px;
+    animation: block 3s infinite;
+}
+
+@keyframes block {
+    0% {left: 480px;}
+    100% {left:-40px;}
+}
